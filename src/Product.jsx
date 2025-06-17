@@ -19,7 +19,7 @@ export const Product = () => {
     { title: "Wedding Shawl", image: "/p9.jpg", oldPrice: "PKR 5500", price: "PKR 4199", phone: "923001234567" },
     { title: "Traditional Cap", image: "/p10.jpg", oldPrice: "PKR 2700", price: "PKR 1999", phone: "923001234567" },
     { title: "Fancy Dress", image: "/p2.jpg", oldPrice: "PKR 4800", price: "PKR 3599", phone: "923001234567" },
-     { title: "Fancy Dress", image: "/p12.jpg", oldPrice: "PKR 4800", price: "PKR 3599", phone: "923001234567" },
+    { title: "Fancy Dress", image: "/p12.jpg", oldPrice: "PKR 4800", price: "PKR 3599", phone: "923001234567" },
   ];
 
   return (
@@ -50,7 +50,9 @@ export const Product = () => {
                 <span className="text-green-600 font-semibold">{p.price}</span>
               </div>
               <a
-                href={`https://wa.me/${p.phone}?text=I'm interested in ${p.title}`}
+                href={`https://wa.me/${p.phone}?text=${encodeURIComponent(
+                  `I'm interested in:\n\n🧵 *${p.title}*\n💰 Old Price: ${p.oldPrice}\n🔥 New Price: ${p.price}\n🖼️ Image: https://yourdomain.com${p.image}`
+                )}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-2 inline-block bg-green-500 text-white text-xs px-2 py-1 rounded-full hover:bg-green-600 transition-all"
