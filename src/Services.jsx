@@ -21,9 +21,9 @@ description: "ہم پیش کرتے ہیں روایت اور جدت کا حسین
   return (
     <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+        <h2 className="text-4xl font-bold text-gray-800 mb-4">ہماری خدمات</h2>
         <p className="text-gray-500 mb-12 max-w-2xl mx-auto">
-          At Tatla Zari Corporations, we offer premium-quality services tailored for excellence in the zari industry.
+          Tatla Zari Corporations میں، ہم زری کی صنعت میں اعلیٰ معیار کی خدمات فراہم کرتے ہیں جو بہترین مہارت اور عمدگی کے تقاضوں پر پوری اُترتی ہیں۔
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, idx) => (
