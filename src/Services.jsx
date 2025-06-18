@@ -1,25 +1,21 @@
 export const Services = () => {
   const services = [
     {
-      title: "Custom Zari Designs",
-      description: "We create intricate, personalized zari patterns for your garments and projects.",
-      icon: "🧵",
+     title: "🧵 منفرد زری ڈیزائن",
+description: "ہم آپ کے ملبوسات اور منصوبوں کے لیے نفاست سے تیار کردہ ذاتی نوعیت کے زری ڈیزائن تخلیق کرتے ہیں۔",
+
     },
     {
-      title: "Bulk Manufacturing",
-      description: "High-quality bulk zari production with timely delivery and consistent standards.",
-      icon: "🏭",
+     title: "🏭 بلک تیاری",
+description: "اعلیٰ معیار کے زری مصنوعات کی بلک میں تیاری، بروقت فراہمی اور مستقل معیار کے ساتھ۔",
+
     },
     {
-      title: "Embroidery Services",
-      description: "Traditional and modern embroidery done by skilled artisans.",
-      icon: "🪡",
+     title: "🪡 فنِ کڑھائی کی دلکش خدمات",
+description: "ہم پیش کرتے ہیں روایت اور جدت کا حسین امتزاج — ماہر کاریگروں کے ہاتھوں بنائی گئی نفیس کڑھائیاں۔",
+
     },
-    {
-      title: "Export Solutions",
-      description: "We offer international delivery and export-quality zari materials.",
-      icon: "🌍",
-    },
+  
   ];
 
   return (

@@ -4,8 +4,7 @@ export const Sections = () => {
     <h2 className="text-3xl md:text-5xl font-extrabold text-gray-800 leading-relaxed tracking-wider max-w-4xl mx-auto px-4 mb-6">
     ✨ ہماری زری کلیکشن ✨
   </h2>
-  <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-loose">
-    یہاں آپ کو کھاد، ونڈا، چُونا، آئل اور زری کی ہر چیز معیاری قیمت پر دستیاب ہے۔
+  <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-loose">یہاں آپ کو کھاد، ونڈا، چُونا، آئل، زری اور جاپسان کی ہر چیز معیاری قیمت پر دستیاب ہے۔
   </p> <br></br><br></br>
 
       <div className="flex flex-col md:flex-row justify-center items-center gap-10">

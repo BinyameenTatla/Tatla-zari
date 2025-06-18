@@ -13,11 +13,16 @@ export const About = () => {
 
         {/* Text Content */}
         <div>
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">About Us</h2>
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">ہمارا تعارف</h2>
           <p className="text-gray-600 mb-6 text-lg">
-            Tatla Zari Corporations is a leading name in traditional and modern zari craftsmanship.
-            With decades of experience, we deliver excellence in design, quality, and innovation.
-            From handcrafted embroidery to industrial-scale production, we take pride in every thread.
+           🕌 دلکش اور باوقار تعارف (حضرت کلیا والا کے لیے):
+تاتلہ زری کارپوریشنز — حضرت کلیا والا میں خوبصورتی کا مرکز
+جہاں روایت، معیار اور جدت ایک ساتھ بُنتے ہیں۔
+ہماری دکان ایک مقام نہیں، ایک پہچان ہے — یہاں ہر چیز خاص ہے، ہر دھاگہ محبت سے تیار کیا گیا ہے۔
+نفیس زری کڑھائیاں، جدید ڈیزائن، اور اعلیٰ معیار — سب کچھ صرف ایک ہی جگہ:
+تاتلہ زری کارپوریشنز، حضرت کلیا والا
+
+
           </p>
           <p className="text-gray-500">
             Our mission is to preserve the beauty of heritage while embracing new-age techniques to
