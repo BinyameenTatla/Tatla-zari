@@ -1,17 +1,19 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { NavLink } from "react-router-dom"; // ✅ Correct import
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItems = ["Home", "Products", "Services", "About"];
+  const navItems = [
+    { name: "Home", path: "/" },
+    { name: "Product", path: "/product" },
+    { name: "Services", path: "/services" },
+    { name: "About", path: "/about" },
+  ];
 
   return (
-    <nav
-      className="bg-white shadow-md sticky top-0 z-50 transition-all duration-300"
-      role="navigation"
-      aria-label="Main Navigation"
-    >
+    <nav className="bg-white shadow-md sticky top-0 z-50 transition-all duration-300" role="navigation" aria-label="Main Navigation">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="text-3xl font-extrabold text-blue-600 tracking-widest drop-shadow-sm cursor-pointer">
@@ -21,11 +23,17 @@ export const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 text-gray-700 font-medium">
           {navItems.map((item) => (
-            <li
-              key={item}
-              className="hover:text-blue-600 hover:scale-105 transition-all duration-300 cursor-pointer"
-            >
-              {item}
+            <li key={item.name}>
+              <NavLink
+                to={item.path}
+                className={({ isActive }) =>
+                  `transition-all duration-300 cursor-pointer hover:text-blue-600 hover:scale-105 ${
+                    isActive ? "text-blue-600 font-semibold" : ""
+                  }`
+                }
+              >
+                {item.name}
+              </NavLink>
             </li>
           ))}
         </ul>
@@ -53,12 +61,18 @@ export const Navbar = () => {
       >
         <ul className="flex flex-col space-y-4 px-6 py-4 text-gray-700 font-medium bg-white shadow-inner">
           {navItems.map((item) => (
-            <li
-              key={item}
-              onClick={() => setIsOpen(false)} // Optional: close menu on item click
-              className="hover:text-blue-600 transition-all duration-300 cursor-pointer"
-            >
-              {item}
+            <li key={item.name}>
+              <NavLink
+                to={item.path}
+                onClick={() => setIsOpen(false)}
+                className={({ isActive }) =>
+                  `transition-all duration-300 cursor-pointer hover:text-blue-600 ${
+                    isActive ? "text-blue-600 font-semibold" : ""
+                  }`
+                }
+              >
+                {item.name}
+              </NavLink>
             </li>
           ))}
         </ul>
